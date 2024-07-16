@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: liusuolong001
+ * @Date: 2023-12-11 16:31:19
+ * @LastEditors: liusuolong001
+ * @LastEditTime: 2024-07-16 12:36:35
+ */
 interface IBar {
   name: string;
   age: number;
@@ -5,7 +12,6 @@ interface IBar {
 }
 
 type MapBar<T> = {
-  // 索引类型
   // 可以添加?所有变成可选 也可以添加readonly将所有类型变为只读
   readonly [prop in keyof T]?: T[prop];
 };
