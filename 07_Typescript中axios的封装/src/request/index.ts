@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: liusuolong001
+ * @Date: 2023-12-13 09:39:04
+ * @LastEditors: liusuolong001
+ * @LastEditTime: 2024-07-16 10:59:06
+ */
 import { BASE_VUE_URL, TIME_VUE_OUT, BASE_REACT_URL, TIME_REACT_OUT } from './config'
 import { HyRequest } from './services'
 

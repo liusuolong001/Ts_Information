@@ -3,7 +3,7 @@
  * @Author: liusuolong001
  * @Date: 2024-07-12 15:51:28
  * @LastEditors: liusuolong001
- * @LastEditTime: 2024-07-12 20:13:48
+ * @LastEditTime: 2024-07-16 09:40:15
 -->
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -17,7 +17,7 @@ onMounted(async () => {
   console.log('resultVue', resultVue)
 
   /* react BaseUrl */
-  const result = await getReactApiMethod()
+  const resultReact = await getReactApiMethod()
   console.log('resultReact', resultReact)
 })
 </script>

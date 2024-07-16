@@ -8,28 +8,28 @@ interface IDiscountType {
   type: string
 }
 
-// export const getReactApi = () => {
-//   HyRequestReact.request<IDiscount>({
-//     url: '/home/discount',
-//     method: 'get',
-//     interceptors: {
-//       interceptorsRequest: (config) => {
-//         // console.log('@@', 'config')
-//         return config
-//       },
-//       interceptorsResponse: (res) => {
-//         // console.log('@!!!!', 'response')
-//         return res
-//       }
-//     }
-//   })
-//     .then((res) => {
-//       console.log(res)
-//     })
-//     .catch((error) => {
-//       console.log(error)
-//     })
-// }
+export const getReactApi = () => {
+  HyRequestReact.request<IDiscountType>({
+    url: '/home/discount',
+    method: 'get',
+    interceptors: {
+      interceptorsRequest: (config) => {
+        // console.log('@@', 'config')
+        return config
+      },
+      interceptorsResponse: (res) => {
+        // console.log('@!!!!', 'response')
+        return res
+      }
+    }
+  })
+    .then((res) => {
+      console.log(res)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+}
 
 export const getReactApiMethod = () => {
   return HyRequestReact.get<IDiscountType>({

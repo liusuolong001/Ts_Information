@@ -13,9 +13,11 @@ const message = ref('TS')
 onMounted(async () => {
   // const res = await getVueApi()
   // console.log(res)
-  getReactApiMethod().then((res) => {
-    console.log(res)
-  })
+  getReactApiMethod()
+    .then((result) => {
+      console.log('result', result)
+    })
+    .catch((err) => {})
 })
 </script>
 
